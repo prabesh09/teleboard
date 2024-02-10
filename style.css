@@ -1,0 +1,113 @@
+:root {
+    --Courgette: "Courgette", cursive;
+    --GreatVibes: "Great Vibes", cursive;
+    --Handlee: "Handlee", cursive;
+    --Montez: "Montez", cursive;
+    --Rochester: "Rochester", cursive;
+    --Sacramento: "Sacramento", cursive;
+    --Poppins: "Poppins", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.main-container {
+    height: 100vh;
+    width: 100vw;
+    background-color: #313131;
+}
+
+.settings {
+    height: 5%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 10px;
+    padding: 0 10px;
+}
+
+.settings i {
+    font-size: 25px;
+    color: #f0f0f0;
+    cursor: pointer;
+}
+
+textarea {
+    height: 95%;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #f0f0f0;
+    padding: 1em 2em;
+    font-size: 30px;
+    resize: none;
+    font-family: var(--Courgette);
+    overflow: visible;
+}
+
+button {
+    background-color: #1e90ff;
+    font-family: var(--Poppins);
+    color: #f0f0f0;
+    outline: none;
+    border: none;
+    padding: 3px 7px;
+    cursor: pointer;
+}
+
+@media (max-width: 500px) {
+    textarea {
+        padding: 1.5em;
+    }
+}
+
+.menu-container {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    font-family: var(--Poppins);
+    padding: 10px;
+    background-color: #dc143c;
+    color: #f0f0f0;
+    border-radius: 11px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menu-container input {
+    width: 200px;
+    margin-left: 20px;
+    outline: none;
+    border: none;
+    padding: 0 5px;
+    font-family: var(--Poppins);
+}
+
+.menu-container button {
+    background-color: #313131;
+    border-radius: 15px;
+    width: 100%;
+}
+.separator {
+    display: flex;
+    justify-content: space-between;
+}
+
+.notification {
+    display: none;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #dc143c;
+    color: white;
+    padding: 5px 25px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    font-family: var(--Poppins);
+}

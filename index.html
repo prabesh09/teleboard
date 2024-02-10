@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>teleboard</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Courgette&family=Great+Vibes&family=Poppins&family=Handlee&family=Montez&family=Rochester&family=Sacramento&display=swap"
+            rel="stylesheet"
+        />
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="main-container">
+            <div class="settings">
+                <button id="sendButton">Send to Telegram</button>
+                <i class="ri-settings-3-fill" id="toggleMenu"></i>
+            </div>
+
+            <textarea type="text" id="messageInput" placeholder="Write your thoughts..."></textarea>
+        </div>
+
+        <div class="menu-container" style="display: none">
+            <div class="separator">
+                <label for="botToken">botToken</label>
+                <input type="text" id="botTokenInput" />
+            </div>
+            <div class="separator">
+                <label for="chatId">chatId</label>
+                <input type="text" id="chatIdInput" />
+            </div>
+            <button id="saveValue">Save</button>
+        </div>
+
+        <div class="notification" id="notification-save">Saved!</div>
+        <div class="notification" id="notification-send">Sent!</div>
+
+        <script src="main.js"></script>
+    </body>
+</html>
