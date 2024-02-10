@@ -1,4 +1,4 @@
-# Notes2Telegram
+# TeleBoard
 
 A simple clipboard that syncs the text to telegram.
 
